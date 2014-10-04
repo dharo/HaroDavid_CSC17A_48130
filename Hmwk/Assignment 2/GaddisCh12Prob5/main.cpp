@@ -20,33 +20,38 @@ int main(){
     do{
     
         do{
-            cout<<"This program will read the first 10 lines from one of two files\n"
-                <<"\"short.txt\" and \"long.txt\". Please type in one to test.\n\n";
+            cout<<"This Program is the same as Gaddis Ch12 Prob 2\n"
+                <<"Except this program will number the lines on the left.\n"
+                <<"Pleast type 'long.txt' to continue\n";
             cin>>readThis;
-        }while(readThis!="short.txt"&&readThis!="long.txt");
+        }while(readThis!="long.txt");
         // Open the file in input mode.
         nameFile.open(readThis, ios::in);
 
         // If the file was successfully opened, continue.
         if (nameFile){
-               // Read an item from the file.
-               getline(nameFile, input);
+            // Read an item from the file.
+            getline(nameFile, input);
 
-               // While the last read operation
-               // was successful, continue.
-
-        for(int i=0;i<10;i++){
-
-               // Display the last item read.
-               cout << input << endl;
-               // Read the next item.
-               getline(nameFile, input);
+            // While the last read operation
+            // was successful, continue.
+        do{
+            for(int i=0;i<24;i++){
+                // Display the last item read.
+                cout<<i+1<<": ";
+                cout << input << endl;
+                // Read the next item.
+                getline(nameFile, input);
+            }
+            cin.get();                   //pause and wait for user input
+            if(!nameFile.eof()){
+            cout<<"The file has more than 24 lines!\n"
+                <<"Press 'Enter' to continue reading from file.\n";
         }
+        }while(cin.get()&&!nameFile.eof());
+
         if(nameFile.eof()){
-            cout<<"The file is less than 10 lines long!\n";
-        }
-        else{
-            cout<<"This file has more than 10 lines.\n";
+            cout<<"This is the complete file\n";
         }
 
             // Close the file.
@@ -56,11 +61,11 @@ int main(){
             cout << "ERROR: Cannot open file.\n";
         }
         //repeat program?
-        do{                                                   //input validation
+        do{                                //input validation
             cout<<"Would you like to try again? (y|n)";
             cin>>choice;
         }while(choice!='y'&&choice!='Y'&&choice!='n'&&choice!='N');
     }while(choice=='y'||choice=='Y');
     cin.ignore();
 return 0;
-}       
+}        
