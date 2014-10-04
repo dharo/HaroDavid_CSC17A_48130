@@ -22,9 +22,9 @@ int main(){
         do{
             cout<<"This Program is the same as Gaddis Ch12 Prob 2\n"
                 <<"Except this program will number the lines on the left.\n"
-                <<"Pleast type 'long.txt' to continue\n";
+                <<"Pleast type 'longfile.txt' to continue\n";
             cin>>readThis;
-        }while(readThis!="long.txt");
+        }while(readThis!="longfile.txt");
         // Open the file in input mode.
         nameFile.open(readThis, ios::in);
 

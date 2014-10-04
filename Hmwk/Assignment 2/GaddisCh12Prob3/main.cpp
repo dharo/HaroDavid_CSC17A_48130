@@ -35,6 +35,9 @@ int main(int argc, char** argv) {
         //Send files to functions
         showFile(joke);
         readLine(punch);
+        //close files
+        joke.close();
+        punch.close();
     //repeat program?
     do{                                                   //input validation
             cout<<"\n\nWould you like to try again? (y|n)";

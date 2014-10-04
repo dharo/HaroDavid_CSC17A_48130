@@ -24,9 +24,9 @@ int main(){
                 <<"the screen, if the file is too large, it will display\n"
                 <<"24 lines at a time while the user presses a key to \n"
                 <<"continue displaying the text.\n"
-                <<"Please type \"long.txt\" to continue...\n";
+                <<"Please type \"longfile.txt\" to continue...\n";
             cin>>readThis;
-        }while(readThis!="long.txt");
+        }while(readThis!="longfile.txt");
         // Open the file in input mode.
         nameFile.open(readThis, ios::in);
 
