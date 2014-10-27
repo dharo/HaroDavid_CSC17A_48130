@@ -1,0 +1,270 @@
+\hypertarget{main_8cpp}{\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_legend}{Legend}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a950fae39ed80781e28c945b4731a0c1f}{strt\+Mu} ()
+\item 
+void \hyperlink{main_8cpp_a2cc8b45e49a35f194bbacdb79ac9df13}{bs\+Board} (int $\ast$$\ast$)
+\item 
+void \hyperlink{main_8cpp_a704309d08c03df7a1474cc6139c594da}{dploy\+Sh} (int $\ast$$\ast$, int $\ast$$\ast$)
+\item 
+void \hyperlink{main_8cpp_a649a15b050b668b8871e812a9554e6e6}{cpu\+Grid} (int $\ast$$\ast$)
+\item 
+void \hyperlink{main_8cpp_a4ab2ae359d4dbb657c33abc885462c57}{cpu\+Dply} (int $\ast$$\ast$, int $\ast$$\ast$)
+\item 
+int \hyperlink{main_8cpp_aeb418db85294ce496bf0203099ae7f04}{rules} ()
+\item 
+int \hyperlink{main_8cpp_a5773b4fc7b16f0105dd62f0bd8a2416d}{hit\+Mu} (int $\ast$$\ast$, int $\ast$$\ast$)
+\item 
+bool \hyperlink{main_8cpp_a7ca69c9dc89edc2bca0dc894038748bd}{ck\+Grid} (int $\ast$$\ast$, int, int, int, int, int)
+\item 
+bool \hyperlink{main_8cpp_afe4d0071894b91f6e2c164944d1dc867}{no\+Cros} (int $\ast$$\ast$, int, int, int, int)
+\item 
+void \hyperlink{main_8cpp_abcf3480269e2443056ba3c9112b586c9}{fil\+Shp} (int $\ast$$\ast$, int, int, int, int, int)
+\item 
+bool \hyperlink{main_8cpp_a8b6543c8f450a1bc8889e90dc78c8297}{hit\+Zne} (int $\ast$$\ast$, int, int, int, int)
+\item 
+void \hyperlink{main_8cpp_a28715c87c7807f19aea37e6403738cc2}{hit\+Grd} ()
+\item 
+void \hyperlink{main_8cpp_a2ddfcfb245f2ae66bc56f22e3e10f42b}{destroy} (int $\ast$$\ast$, int)
+\item 
+int \hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{main_8cpp_a442a526f05e8429d610b777bb0a4446b}{R\+O\+W} = 11
+\item 
+const int \hyperlink{main_8cpp_ade5776b4151c77e0c375d1091dae8978}{C\+O\+L} = 11
+\item 
+int \hyperlink{main_8cpp_a3718105ab26b996f26a5e27920ccc8a8}{H\+I\+T\+G\+R\+I\+D} \mbox{[}\hyperlink{main_8cpp_a442a526f05e8429d610b777bb0a4446b}{R\+O\+W}\mbox{]}\mbox{[}\hyperlink{main_8cpp_ade5776b4151c77e0c375d1091dae8978}{C\+O\+L}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a2cc8b45e49a35f194bbacdb79ac9df13}{\index{main.\+cpp@{main.\+cpp}!bs\+Board@{bs\+Board}}
+\index{bs\+Board@{bs\+Board}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{bs\+Board}]{\setlength{\rightskip}{0pt plus 5cm}void bs\+Board (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{S\+Q\+U\+A\+R\+E}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a2cc8b45e49a35f194bbacdb79ac9df13}
+
+
+Definition at line 132 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a7ca69c9dc89edc2bca0dc894038748bd}{\index{main.\+cpp@{main.\+cpp}!ck\+Grid@{ck\+Grid}}
+\index{ck\+Grid@{ck\+Grid}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{ck\+Grid}]{\setlength{\rightskip}{0pt plus 5cm}bool ck\+Grid (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{ck\+Ary, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{ship\+Sz}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a7ca69c9dc89edc2bca0dc894038748bd}
+
+
+Definition at line 468 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a4ab2ae359d4dbb657c33abc885462c57}{\index{main.\+cpp@{main.\+cpp}!cpu\+Dply@{cpu\+Dply}}
+\index{cpu\+Dply@{cpu\+Dply}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{cpu\+Dply}]{\setlength{\rightskip}{0pt plus 5cm}void cpu\+Dply (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{C\+P\+U\+G\+R\+D, }
+\item[{int $\ast$$\ast$}]{S\+Q\+U\+A\+R\+E}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a4ab2ae359d4dbb657c33abc885462c57}
+
+
+Definition at line 557 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a649a15b050b668b8871e812a9554e6e6}{\index{main.\+cpp@{main.\+cpp}!cpu\+Grid@{cpu\+Grid}}
+\index{cpu\+Grid@{cpu\+Grid}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{cpu\+Grid}]{\setlength{\rightskip}{0pt plus 5cm}void cpu\+Grid (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{C\+P\+U\+G\+R\+D}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a649a15b050b668b8871e812a9554e6e6}
+
+
+Definition at line 175 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a2ddfcfb245f2ae66bc56f22e3e10f42b}{\index{main.\+cpp@{main.\+cpp}!destroy@{destroy}}
+\index{destroy@{destroy}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void destroy (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{array, }
+\item[{int}]{rows}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a2ddfcfb245f2ae66bc56f22e3e10f42b}
+
+
+Definition at line 883 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a704309d08c03df7a1474cc6139c594da}{\index{main.\+cpp@{main.\+cpp}!dploy\+Sh@{dploy\+Sh}}
+\index{dploy\+Sh@{dploy\+Sh}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{dploy\+Sh}]{\setlength{\rightskip}{0pt plus 5cm}void dploy\+Sh (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{S\+Q\+U\+A\+R\+E, }
+\item[{int $\ast$$\ast$}]{C\+P\+U\+G\+R\+D}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a704309d08c03df7a1474cc6139c594da}
+
+
+Definition at line 219 of file main.\+cpp.
+
+\hypertarget{main_8cpp_abcf3480269e2443056ba3c9112b586c9}{\index{main.\+cpp@{main.\+cpp}!fil\+Shp@{fil\+Shp}}
+\index{fil\+Shp@{fil\+Shp}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{fil\+Shp}]{\setlength{\rightskip}{0pt plus 5cm}void fil\+Shp (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{fillsh, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{ship\+Sz}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_abcf3480269e2443056ba3c9112b586c9}
+
+
+Definition at line 508 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a28715c87c7807f19aea37e6403738cc2}{\index{main.\+cpp@{main.\+cpp}!hit\+Grd@{hit\+Grd}}
+\index{hit\+Grd@{hit\+Grd}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{hit\+Grd}]{\setlength{\rightskip}{0pt plus 5cm}void hit\+Grd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a28715c87c7807f19aea37e6403738cc2}
+
+
+Definition at line 841 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a5773b4fc7b16f0105dd62f0bd8a2416d}{\index{main.\+cpp@{main.\+cpp}!hit\+Mu@{hit\+Mu}}
+\index{hit\+Mu@{hit\+Mu}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{hit\+Mu}]{\setlength{\rightskip}{0pt plus 5cm}int hit\+Mu (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{S\+Q\+U\+A\+R\+E, }
+\item[{int $\ast$$\ast$}]{C\+P\+U\+G\+R\+D}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a5773b4fc7b16f0105dd62f0bd8a2416d}
+
+
+Definition at line 758 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a8b6543c8f450a1bc8889e90dc78c8297}{\index{main.\+cpp@{main.\+cpp}!hit\+Zne@{hit\+Zne}}
+\index{hit\+Zne@{hit\+Zne}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{hit\+Zne}]{\setlength{\rightskip}{0pt plus 5cm}bool hit\+Zne (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{ht\+Ary, }
+\item[{int}]{R\+O\+W, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{playr}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a8b6543c8f450a1bc8889e90dc78c8297}
+
+
+Definition at line 808 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 69 of file main.\+cpp.
+
+\hypertarget{main_8cpp_afe4d0071894b91f6e2c164944d1dc867}{\index{main.\+cpp@{main.\+cpp}!no\+Cros@{no\+Cros}}
+\index{no\+Cros@{no\+Cros}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{no\+Cros}]{\setlength{\rightskip}{0pt plus 5cm}bool no\+Cros (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{ply\+G, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_afe4d0071894b91f6e2c164944d1dc867}
+
+
+Definition at line 533 of file main.\+cpp.
+
+\hypertarget{main_8cpp_aeb418db85294ce496bf0203099ae7f04}{\index{main.\+cpp@{main.\+cpp}!rules@{rules}}
+\index{rules@{rules}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{rules}]{\setlength{\rightskip}{0pt plus 5cm}int rules (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_aeb418db85294ce496bf0203099ae7f04}
+
+
+Definition at line 450 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a950fae39ed80781e28c945b4731a0c1f}{\index{main.\+cpp@{main.\+cpp}!strt\+Mu@{strt\+Mu}}
+\index{strt\+Mu@{strt\+Mu}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{strt\+Mu}]{\setlength{\rightskip}{0pt plus 5cm}void strt\+Mu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a950fae39ed80781e28c945b4731a0c1f}
+
+
+Definition at line 80 of file main.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_ade5776b4151c77e0c375d1091dae8978}{\index{main.\+cpp@{main.\+cpp}!C\+O\+L@{C\+O\+L}}
+\index{C\+O\+L@{C\+O\+L}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{C\+O\+L}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+O\+L = 11}}\label{main_8cpp_ade5776b4151c77e0c375d1091dae8978}
+
+
+Definition at line 33 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a3718105ab26b996f26a5e27920ccc8a8}{\index{main.\+cpp@{main.\+cpp}!H\+I\+T\+G\+R\+I\+D@{H\+I\+T\+G\+R\+I\+D}}
+\index{H\+I\+T\+G\+R\+I\+D@{H\+I\+T\+G\+R\+I\+D}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{H\+I\+T\+G\+R\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}int H\+I\+T\+G\+R\+I\+D\mbox{[}{\bf R\+O\+W}\mbox{]}\mbox{[}{\bf C\+O\+L}\mbox{]}}}\label{main_8cpp_a3718105ab26b996f26a5e27920ccc8a8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},
+    \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0\}\}
+\end{DoxyCode}
+
+
+Definition at line 34 of file main.\+cpp.
+
+\hypertarget{main_8cpp_a442a526f05e8429d610b777bb0a4446b}{\index{main.\+cpp@{main.\+cpp}!R\+O\+W@{R\+O\+W}}
+\index{R\+O\+W@{R\+O\+W}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{R\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}const int R\+O\+W = 11}}\label{main_8cpp_a442a526f05e8429d610b777bb0a4446b}
+
+
+Definition at line 33 of file main.\+cpp.
+
