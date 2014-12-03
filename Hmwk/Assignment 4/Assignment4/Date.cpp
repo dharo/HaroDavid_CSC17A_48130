@@ -59,7 +59,7 @@ void Date::mlaDte(){
 
 
 	//Takes in int value for month and converts it to a string/char array (Word)
-char* Date::months(int m){
+string Date::months(int m){
 	//change month from int to string
 	switch(m){
 	case 1:

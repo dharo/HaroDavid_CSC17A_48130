@@ -1,6 +1,8 @@
 #ifndef DATE_H
 #define DATE_H
 
+#include <string>
+using namespace std;
 
 //Classes
 class Date{
@@ -18,7 +20,7 @@ class Date{
 		void stdDte();		 //displays as mm/dd/yyyy
 		void gregDte();		 //displays as Month dd, yyyy
 		void mlaDte();		 //displays as dd Month yyyy
-		char* months(int);  //Generate months from int values
+		string months(int);  //Generate months from int values
 };
 
 #endif
