@@ -1,0 +1,13 @@
+
+Rules for BattleShip
+
+Each player selects an area to place their ships, whether in horizontal or
+vertical. 
+If a player strikes a spot in the grid that contains a part of the ship, 
+an '3' will be displayed in order to mark the hit zone
+If a player misses, the spot will be left untouched.
+Inputs are taken by ROW first followed by COLUMN
+
+
+Good luck, have fun!!
+Press 1 to return to Main Menu
