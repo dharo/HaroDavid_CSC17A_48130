@@ -1,0 +1,12 @@
+Project 2
+
+-fstream(binary files) DONE-----> rules read from binary file
+-classes	       DONE-----> class created for graphics (reads from binary file)	   
+-inheritance           DONE-----> WBHit class inherits Hit class
+-dynamic arrays	       DONE-----> 2D dynamic arrays used for holding cpu and player grids
+-polymorphic behavior  DONE-----> overridden getHit method in WBHit class 
+-templates	       Not Found-------> Trouble with setting up template class resulted in failed builds   
+
+
+
+
