@@ -17,9 +17,15 @@
  * - Fixed issue where CPU would only deploy to a 6x6 playing field
  * - Squished other bugs!
  * 
- * -----> ADDED ABILITY TO READ RULES FROM BINARY FILE
- * -----> 
+ *   
+ *   Updates for version BattleShip_V2_5_2:
  * 
+ * ->fstream read binary files......DONE-----> rules read from binary file
+ * ->classes........................DONE-----> class created for graphics (reads from binary file)	   
+ * ->inheritance....................DONE-----> WBHit class inherits Hit class
+ * ->dynamic arrays.................DONE-----> 2D dynamic arrays used for holding cpu and player grids
+ * ->polymorphic behavior...........DONE-----> overridden getHit method in WBHit class 
+ * ->templates......................Not Found-------> Trouble with setting up template class resulted in failed builds 
  * 
  */
 //Libraries
@@ -30,7 +36,8 @@
 #include <cstring>
 #include <fstream>
 
-#include "Hit.h"
+#include "Hit.h"        //base class for graphics
+#include "WBHit.h"
 using namespace std;
 //Structures
 struct Legend{
@@ -832,18 +839,14 @@ bool hitZne(int **htAry, int ROW, int x, int y, int playr) {
     static int count = 15;
     static int countA = 15;
     Hit a;
+    WBHit b;
     bool win = false; //Flag to indicate value was found
     //Check if Selection was a hit or miss
     if (htAry[x - 1][y - 1] == 1) {
         if (playr == 1) {
             HITGRID[x - 1][y - 1] = 3;
             htAry[x - 1][y - 1] = 3;
-    /*            cout<<    "\t\t\t\t\t     __  ____________\n"<<
-             "\t\t\t\t\t    / / / /  _/_  __/\n"<<
-            "\t\t\t\t\t   / /_/ // /  / /   \n"<<
-           "\t\t\t\t\t  / __  // /  / /    \n"<<
-          "\t\t\t\t\t /_/ /_/___/ /_/     \n"<<
-                   "\n";*/
+
             a.getHit();                         //read from file for HIT graphic
             cout<<endl;
             count--;
@@ -855,11 +858,8 @@ bool hitZne(int **htAry, int ROW, int x, int y, int playr) {
         } else if (playr == 2) {
             htAry[x - 1][y - 1] = 3;
             
-          cout<<"       _       ________   __  _____ _    ________   ____  _____________   __   __  ______________\n"<<
-          "      | |     / / ____/  / / / /   | |  / / ____/  / __ )/ ____/ ____/ | / /  / / / /  _/_  __/ /\n"<<
-          "      | | /| / / __/    / /_/ / /| | | / / __/    / __  / __/ / __/ /  |/ /  / /_/ // /  / / / / \n"<<
-          "      | |/ |/ / /___   / __  / ___ | |/ / /___   / /_/ / /___/ /___/ /|  /  / __  // /  / / /_/  \n"<<
-          "      |__/|__/_____/  /_/ /_/_/  |_|___/_____/  /_____/_____/_____/_/ |_/  /_/ /_/___/ /_/ (_)  \n";
+            b.getHit();
+
             countA--;
             bsBoard(htAry);
             if (count == 0) {

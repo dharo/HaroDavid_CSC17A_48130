@@ -15,14 +15,18 @@
 
 using namespace std;
 
+
+
 class Hit {
 private:
     string err;
 public:
     Hit();
+    virtual ~Hit(){}
     void setErr();
-    string getErr() const;
-    void getHit() const;
+    string getErr();
+    virtual void getHit();
+    
 };
 
 #endif	/* HIT_H */

@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Hit.h</itemPath>
+      <itemPath>WBHit.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,6 +15,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Hit.cpp</itemPath>
+      <itemPath>WBHit.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -42,6 +44,10 @@
       </item>
       <item path="Hit.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="WBHit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="WBHit.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -68,6 +74,10 @@
       <item path="Hit.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Hit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WBHit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="WBHit.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
