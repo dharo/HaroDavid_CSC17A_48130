@@ -1,0 +1,6 @@
+build/Debug/GNU-MacOSX/main.o: main.cpp Prob3TableInherited.h \
+  Prob3Table.h
+
+Prob3TableInherited.h:
+
+Prob3Table.h:

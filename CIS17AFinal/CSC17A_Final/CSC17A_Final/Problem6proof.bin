@@ -1,0 +1,152 @@
+CSC 17A Final Problem 6
+
+Conversions!
+This text is being read from a file, pdf scans are also included in project file
+in case proof of handwritten work is required.
+
+
+4207999A
+
+
+Convert to binary
+  4	2	0     7	     9      9      9      A
+0100   0010   0000   0111   1001   1001   1001   1010
+
+Split to 1 Sign Bit, 8 Power bits and 23 Mantissa/Fraction bits
+
+0 | 10000100 | 00001111001100110011010
+S     Power	  Mantissa/Fraction
+
+Add up Power Bits
+
+10000100 = 132
+Calculate Power
+132 - 127 = 5 = 2^5
+
+Add missing digit to fraction
+
+--->1.00001111001100110011010 
+Move Decimal over to the right 5 places
+
+---->100001.111001100110011010
+Add digits in significants place
+100001 = 33
+
+Take Remaining Decimal fraction and convert to hex
+
+1110   0110   0110   0110   1000
+ E	 6	6     6	     8
+ 14	 6	6     6      8
+
+Convert hex to decimal and add 
+(14x16^-1)+(6x16^-2)+(6x16^-3)+(6x16^-4)+(8x16^-5)
+
+	0.875 
+	0.0234375
+    +	0.00146484375
+	0.00009155273
+	0.00000762939
+  -----------------------
+	0.90000152587
+
+Add the 33 from earlier to get full conversion
+	
+	ANSWER-------------->33.90000152587<---------------
+
+
+
+
+
+44861333
+
+Convert to Binary
+
+0100    0100    1000    0110    0001    0011    0011    0011
+ 4	  4	  8	  6	  1	  3	  3	  3
+
+
+Split to 1 Sign Bit, 8 Power bits and 23 Mantissa/Fraction bits
+
+ 0 | 10001001 | 00001100001001100110011
+ S    Power	   Mantissa/Fraction
+
+Add up power bits
+10001001 = 137
+Calculate Power
+137 - 127 = 10 = 2^10
+
+Add missing significant digit to fraction
+---------->1.00001100001001100110011
+Move decimal to the right 10 places per 2^10
+---------->10000110000.1001100110011
+
+Calculate whole number
+10000110000 = 1024 + 16 + 32 = 1072
+
+Convert Remaining Fraction to hex
+
+1001    1001    1001    1000
+ 9	  9	  9	  8
+
+Convert from Hex to decimal
+
+(9x16^-1)+(9x16^-2)+(9x16^-3)+(8x16^-4)
+
+	0.5625
+	0.03515625
+     +	0.00219726562
+	0.00012207031
+   ---------------------
+	0.59997558593
+
+Add Whole number 1072
+
+ANSWER----------------------> 1072.59997558593 <-------------------------
+
+
+
+
+3D8F5C29
+
+Convert to binary
+0011    1101    1000    1111    0101    1100    0010    1001
+ 3	  D	  8	 F	 5	 C	  2	  9
+
+Split to 1 Sign Bit, 8 Power bits and 23 Mantissa/Fraction bits
+
+ 0 | 01111011 | 00011110101110000101001
+ S     Power	  Mantissa/Fraction
+
+calculate Power 
+01111011 = 123
+123 - 127 = -4 = 2^-4
+
+Add missing number to fraction
+-------->1.00011110101110000101001
+Move decimal over to the left 4 places per 2^-4
+-------->0.000100011110101110000101001
+
+Whole number = 0.
+
+Convert remaining fraction to Hex
+0001    0001    1110    1011    1000    0101    0010
+ 1	  1	 E	 B	 8	  5	  2
+
+Convert Hex to Decimal
+(1x16^-1)+(1x16^-2)+(14x16^-3)+(11x16^-4)+(8x16^-5)+(5x16^-6)+(2x16^-7)
+
+
+	0.0625
+	0.00390625
+	0.00341796875
+	0.00016784667
+     +	0.00000762939
+	0.000000298023224
+	0.0000000074505806
+    ------------------------
+	0.07000000028
+
+There is no Whole number
+ANSWER ------------------------> 0.07000000028 <--------------------------
+
+

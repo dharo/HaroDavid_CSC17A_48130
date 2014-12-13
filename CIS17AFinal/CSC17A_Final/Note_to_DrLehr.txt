@@ -1,0 +1,9 @@
+Note to Dr. Lehr
+
+Thanks for another great semester!
+
+For Problem 1, it may or may not fail to run, there have been times when this will
+happen from different machines in different OS (OSX, Ubuntu, Windows 8.1) I have 
+attached the Problem 1 in its own Netbeans 8.0.2 Project that I know was running perfect
+the last few times I tested it, however when the project was placed int he menu project, 
+it would terminate during run.
